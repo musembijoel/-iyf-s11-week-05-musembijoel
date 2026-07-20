@@ -1,39 +1,74 @@
 # -iyf-s11-week-05-musembijoel
-DOM
-# Week {05}: {DOM MANIPULATION}
+# Joel Musembi Samwel– Week 05 Project
 
-## Author
-- **Name:** Joel Musembi Samwel 
-- **GitHub:** [@Musembijoel](https://github.com/Musembijoel)
-- **Date:** 20 July 2026
+## Overview
 
-## Project Description
-Brief description of what you built and why.
+This repository holds my Week 04 submission. This week, I learned the basics of JavaScript to build simple computer programs. I practiced writing reusable blocks of code, using logic like "if/else" statements and loops, organizing data in lists called arrays, and reversing strings to build tools like a palindrome checker.
+
+## Project Progress & Checklist
+
+- Understand variables (let, const)
+- Know all data types
+- Write functions (declaration, expression, arrow)
+- Use control flow (if/else, switch, loops)
+- Create and manipulate arrays
+- Use array methods (map, filter, reduce, find)
+- Create and work with objects
+- Work with arrays of objects
+- Calculator project complete
+- Grade tracker project complete
+
 
 ## Technologies Used
-- HTML5
-- CSS3
-- JavaScript(DOM MANIPULATION)
 
-## Features
-- Feature 1
-- Feature 2
-- Feature 3
+- HTML
+- CSS
+- JavaScript 
+- Node.js Runtime
+- Visual Studio Code
+- Browser Developer Tools (Console)
+- Git & GitHub
 
-## How to Run
-1. Clone this repository
-2. Open `index.html` in your browser
-   OR
-   Run `npm install` then `npm start`
+## Project Structure
 
-## Lessons Learned
-What did you learn while building this project?
+```text
+iyf-s11-week-04-musembijoel/
+├── README.md
+├── arr.js
+├── calc.js
+├── contr.js
+├── discalc.js
+├── dupl.js
+├── fizzbuzz.js
+├── func.js
+├── gradem.js
+├── larg.js
+├── main.js
+├── palid.js
+├── par.js
+└── revstring.js
+```
 
-## Challenges Faced
-What problems did you encounter and how did you solve them?
+## What I Have Learned
+- How to structure modern JavaScript code utilizing scoping with let and const.
 
-## Screenshots (optional)
-![Screenshot description](path/to/screenshot.png)
+- Implementing complex algorithms using nested conditionals and multiple loop styles.
 
-## Live Demo (if deployed)
-[View Live Demo](https://your-deployed-url.com)
+- Transforming, filtering, and aggregating complex array structures with modern iteration methods.
+
+- Organizing structural application states using nested objects and arrays of objects.
+
+- Developing interactive programmatic features like standalone calculators and string manipulators.
+
+- Isolating program modules and tracking script versions cleanly through independent feature branches.
+
+## Future Improvements
+
+- Integrate basic Document Object Model (DOM) properties to link JavaScript engines to functional UI elements.
+
+- Introduce comprehensive unit testing architectures using frameworks like Jest to catch algorithm errors.
+
+- Expand script architectures to support data standard storage formatting like JSON files.
+
+## Author
+Github:Musembijoel
