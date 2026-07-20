@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Content Copier</title>
+    <style>
+        .box {
+            width: 250px;
+            height: 100px;
+            border: 2px dashed #999;
+            margin: 10px;
+            padding: 10px;
+            display: inline-block;
+            vertical-align: top;
+            background: #f9f9f9;
+        }
+        #source { background: #fffde7; border-color: #fbc02d; }
+    </style>
+</head>
+<body>
+
+    <!-- Draggable source box -->
+    <div id="source" class="box" draggable="true" ondragstart="event.dataTransfer.setData('text', this.innerText)">
+        This is the secret content to copy! 🟡
+    </div>
+
+    <!-- Drop target box -->
+    <div id="target" class="box" ondragover="event.preventDefault()" ondrop="event.preventDefault(); this.innerText = event.dataTransfer.getData('text')">
+        <i>Drop content here...</i>
+    </div>
+
+    <br>
+    <button onclick="copyContent()">Copy via Button</button>
+
+    <script>
+        function copyContent() {
+            // Copy text straight from source to target box
+            document.getElementById('target').innerText = document.getElementById('source').innerText;
+        }
+    </script>
+</body>
+</html>
