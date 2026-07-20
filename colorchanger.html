@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            text-align: center;
+        }
+        button {
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: background 0.2s;
+        }
+        button:hover {
+            background-color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="colorBtn">Change Heading Colors 🟢</button>
+
+    <h1>Main Heading (H1)</h1>
+    <h2>Sub-heading (H2)</h2>
+    <h3>Minor Heading (H3)</h3>
+    <p>This regular paragraph text will remain unchanged.</p>
+
+    <script>
+        // Select the button element
+        const button = document.getElementById('colorBtn');
+
+        // Function to generate a random hex color
+        function getRandomHexColor() {
+            const hexChars = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += hexChars[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        // Event listener to apply colors on click
+        button.addEventListener('click', () => {
+            const randomColor = getRandomHexColor();
+            
+            // Select all h1, h2, and h3 elements
+            const headings = document.querySelectorAll('h1, h2, h3');
+            
+            // Loop through and apply the new color
+            headings.forEach(heading => {
+                heading.style.color = randomColor;
+            });
+        });
+    </script>
+</body>
+</html>
