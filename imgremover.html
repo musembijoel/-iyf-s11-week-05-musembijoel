@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Image Remover</title>
+</head>
+<body>
+
+    <button onclick="toggleImages()">Hide/Show Images 🟢</button>
+    <br><br>
+
+    <!-- Sample images with placeholder URLs -->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF3XSy-h8DcKUG06nfepLV8UW_j-YH1IDPCQfqzrpCpw&s=10" alt="Mc Laren">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnvnf29S1YIgH7G1jbigsEx-32_9CT8EK3Bi73qgPwGA&s=10" alt="Bugatti">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuh49Tw1XHiWagNCFLuq-MNta8AFVPJp_18ZFBnw5lpQ&s=10" alt="Lamborghini">
+
+    <script>
+        function toggleImages() {
+            // Find all image elements on the page
+            document.querySelectorAll('img').forEach(img => {
+                // Switch between 'none' (hidden) and '' (visible / default)
+                img.style.display = img.style.display === 'none' ? '' : 'none';
+            });
+        }
+    </script>
+</body>
+</html>
