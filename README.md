@@ -32,21 +32,15 @@ This repository holds my Week 04 submission. This week, I learned the basics of 
 ## Project Structure
 
 ```text
-iyf-s11-week-04-musembijoel/
+iyf-s11-week-05-musembijoel/
 ├── README.md
-├── arr.js
-├── calc.js
-├── contr.js
-├── discalc.js
-├── dupl.js
-├── fizzbuzz.js
-├── func.js
-├── gradem.js
-├── larg.js
-├── main.js
-├── palid.js
-├── par.js
-└── revstring.js
+├── colorchanger.html
+├── ele.html
+├── imgremover.html
+├── contentcopier.html
+├── detasklist.html
+├── todolist 
+├── app.js
 ```
 
 ## What I Have Learned
