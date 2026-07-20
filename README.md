@@ -3,21 +3,17 @@
 
 ## Overview
 
-This repository holds my Week 04 submission. This week, I learned the basics of JavaScript to build simple computer programs. I practiced writing reusable blocks of code, using logic like "if/else" statements and loops, organizing data in lists called arrays, and reversing strings to build tools like a palindrome checker.
+This repository holds my Week 04 submission. This week, I learned the Data Object Managemen. I practiced writing reusable blocks of code,event handlers and event listeners, developing a to do list, developing a task list.
 
 ## Project Progress & Checklist
 
-- Understand variables (let, const)
-- Know all data types
-- Write functions (declaration, expression, arrow)
-- Use control flow (if/else, switch, loops)
-- Create and manipulate arrays
-- Use array methods (map, filter, reduce, find)
+- DOM manipulation.
+- creating a color changer
+- Creating an image remover.
+- Content copier
+- creating a Todo list
+- creating a task list 
 - Create and work with objects
-- Work with arrays of objects
-- Calculator project complete
-- Grade tracker project complete
-
 
 ## Technologies Used
 
