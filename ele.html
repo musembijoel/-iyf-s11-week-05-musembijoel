@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Element Creator</title>
+</head>
+<body>
+
+    <button onclick="addParagraph()">Add Paragraph 🟢</button>
+    <div id="container"></div>
+
+    <script>
+        let count = 0;
+
+        function addParagraph() {
+            count++; // Increment the paragraph number
+            
+            // Create a wrapper div for the paragraph and its delete button
+            const div = document.createElement('div');
+            
+            // Set the inner HTML containing the numbered text and a delete button
+            div.innerHTML = `
+                <span>Paragraph #${count}</span>
+                <button onclick="this.parentElement.remove()">Delete</button>
+            `;
+            
+            // Append the new element to the container
+            document.getElementById('container').appendChild(div);
+        }
+    </script>
+</body>
+</html>
