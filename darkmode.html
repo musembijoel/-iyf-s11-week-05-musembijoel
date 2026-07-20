@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dark Mode Toggle</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 50px;
+            /* Smoothly animates background and text color changes */
+            transition: background-color 0.4s ease, color 0.4s ease;
+            background-color: #ffffff;
+            color: #333333;
+        }
+
+        /* Dark mode styling overrides */
+        body.dark-mode {
+            background-color: #1e1e1e;
+            color: #f5f5f5;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="toggleDarkMode()">Toggle Theme 🌓</button>
+    <h1>Dark Mode</h1>
+    <p>This is a dark mode toggle practice</p>
+
+    <script>
+        // Check for saved preference when the page loads
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+
+        function toggleDarkMode() {
+            // Toggle the dark-mode class on the body
+            const isDark = document.body.classList.toggle('dark-mode');
+            
+            // Save the current state to localStorage
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        }
+    </script>
+</body>
+</html>
