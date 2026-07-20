@@ -53,11 +53,11 @@ iyf-s11-week-05-musembijoel/
 
 ## Future Improvements
 
-- Integrate basic Document Object Model (DOM) properties to link JavaScript engines to functional UI elements.
-
-- Introduce comprehensive unit testing architectures using frameworks like Jest to catch algorithm errors.
-
-- Expand script architectures to support data standard storage formatting like JSON files.
+- Integrate LocalStorage or SessionStorage into app.js to prevent user tasks and configurations from erasing upon page refresh.
+- Refactor your centralized app.js into ES6 Modules to give each HTML utility its own dedicated, maintainable script file.
+- Implement strict input sanitisation to protect your interactive fields against empty inputs or malicious script injections.
+- Upgrade your interface designs using CSS Grid or Flexbox to ensure every tool functions perfectly on mobile screens.
+- Introduce a central state object in your JavaScript to track app data uniformly before rendering changes to the UI.
 
 ## Author
 Github:Musembijoel
