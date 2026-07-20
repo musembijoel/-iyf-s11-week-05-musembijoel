@@ -44,17 +44,12 @@ iyf-s11-week-05-musembijoel/
 ```
 
 ## What I Have Learned
-- How to structure modern JavaScript code utilizing scoping with let and const.
-
-- Implementing complex algorithms using nested conditionals and multiple loop styles.
-
-- Transforming, filtering, and aggregating complex array structures with modern iteration methods.
-
-- Organizing structural application states using nested objects and arrays of objects.
-
-- Developing interactive programmatic features like standalone calculators and string manipulators.
-
-- Isolating program modules and tracking script versions cleanly through independent feature branches.
+- Building colorchanger.html taught me how to read user inputs and modify CSS styles dynamically using JavaScript.
+- Creating ele.html helped me master creating, configuring, and appending HTML elements programmatically.
+- Developing imgremover.html showed me how to target and safely delete specific media nodes from the DOM.
+- Building contentcopier.html taught me how to use browser APIs to copy text directly to a user's clipboard.
+- Designing todolist and detasklist.html helped me practice managing and updating task data across different layouts.
+- Linking files to app.js taught me how to separate HTML structure from JavaScript application logic.
 
 ## Future Improvements
 
