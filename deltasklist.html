@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delegated Task List</title>
+    <style>
+        .container { padding: 20px; border: 1px solid #ccc; max-width: 400px; margin: 50px auto; font-family: sans-serif; }
+        .completed { text-decoration: line-through; color: #888; }
+        ul { list-style: none; padding: 0; }
+        li { display: flex; justify-content: space-between; align-items: center; padding: 8px; border-bottom: 1px solid #eee; cursor: pointer; }
+        .delete-btn { background-color: #ff4d4d; color: white; border: none; padding: 5px 10px; cursor: pointer; border-radius: 3px; }
+        .form-group { display: flex; gap: 10px; margin-bottom: 15px; }
+        input { flex: 1; padding: 8px; }
+        button[type="submit"] { padding: 8px 15px; }
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        <h2>Delegated Task List</h2>
+        
+        <form id="task-form" class="form-group">
+            <input type="text" id="task-input" placeholder="Enter a new task..." required>
+            <button type="submit">Add</button>
+        </form>
+
+        <ul id="task-list">
+            <!-- Sample tasks to demonstrate functionality -->
+            <li>
+                <span class="task-text">Go for a morning run</span>
+                <button class="delete-btn">Delete</button>
+            </li>
+            <li>
+                <span class="task-text">Meditate</span>
+                <button class="delete-btn">Delete</button>
+            </li>
+        </ul>
+    </main>
+
+    <script>
+        const taskForm = document.getElementById("task-form");
+        const taskInput = document.getElementById("task-input");
+        const taskList = document.getElementById("task-list");
+
+        taskForm.addEventListener("submit", (event) => {
+            event.preventDefault();
+            
+            const li = document.createElement("li");
+            li.innerHTML = `
+                <span class="task-text">${taskInput.value.trim()}</span>
+                <button class="delete-btn">Delete</button>
+            `;
+            
+            taskList.appendChild(li);
+            taskInput.value = "";
+        });
+
+        taskList.addEventListener("click", (event) => {
+            const target = event.target;
+
+            if (target.classList.contains("delete-btn")) {
+                target.parentElement.remove();
+                return;
+            }
+
+            const li = target.closest("li");
+            if (li && taskList.contains(li)) {
+                li.querySelector(".task-text").classList.toggle("completed");
+            }
+        });
+    </script>
+</body>
+</html>
